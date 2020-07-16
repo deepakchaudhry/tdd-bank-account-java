@@ -4,12 +4,17 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AccountTest {
 
     @Test
-	@Disabled
-    public void depositAnAmountToIncreaseTheBalance() {
-        assertThat("your first test").isBlank();
+	    public void depositAnAmountToIncreaseTheBalance()
+    {
+     Account account = new Account();
+
+        assertEquals(20000,account.getBalance(10000));
+        //assertThat(account.deposit(10)).isEqualTo(20);
     }
+
 }
