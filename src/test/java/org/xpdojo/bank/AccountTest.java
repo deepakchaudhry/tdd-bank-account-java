@@ -26,4 +26,12 @@ public class AccountTest {
         //assertThat(account.deposit(10)).isEqualTo(20);
     }
 
+    @Test
+    public void viewAmount()
+    {
+        Account account = new Account();
+
+        assertEquals(50000,account.viewBalance());
+        //assertThat(account.deposit(10)).isEqualTo(20);
+    }
 }

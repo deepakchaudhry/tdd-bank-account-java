@@ -9,4 +9,8 @@ public class Account {
     public int withBalance(int i) {
   return 10;
     }
+
+    public int viewBalance() {
+        return 0;
+    }
 }
